@@ -1,0 +1,31 @@
+# Easy Proxy on AWS using Terraform
+## Simple steps to spin up a cheap AWS EC2 Instance as proxy.
+
+#### Beware!! This kind of proxy should be used to access private resources inside AWS or another VPN.
+#### This will not work to access prohibit resources outside your country, since AWS IPs are most likely blacklisted.
+
+1. Clone this repo:
+    ```sh
+    git clone git@github.com:DourivalPimentel/easyProxyOnAWS.git
+    ```
+2. If you don't have AWS Cli or Terraform setup, follow the tutorials bellow:
+    1. Install [Terraform](https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu) to spin up the EC2 from command line
+    2. Create a [new AWS account](https://aws.amazon.com/pt/) with [programatic access](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console).
+    3. Install [AWS Cli](https://linuxhint.com/install_aws_cli_ubuntu/) to allow access to your AWS account.
+3. Go to the projects folder:
+    ```
+    cd easyProxyOnAWS
+    ```
+4. Start Terraform:
+    ```sh
+    terraform init
+    ```
+5. Deploy as follow:
+   
+    ```sh
+    terraform apply -var-file="var.tfvars"
+    ```
+
+## Refs:
+
+https://medium.com/@yuyasugano/machine-learning-infrastructure-terraforming-sagemaker-part-2-f2460a9a4663
