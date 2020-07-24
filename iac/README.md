@@ -1,12 +1,8 @@
-# Easy Proxy on AWS using Terraform
-## Simple steps to spin up a cheap AWS EC2 Instance as proxy.
-
-#### Beware!! This kind of proxy should be used to access private resources inside AWS or another VPN.
-#### This will not work to access prohibit resources outside your country, since AWS IPs are most likely blacklisted.
+# Terraforming SageMkaker Notebook Instance on AWS using Terraform
 
 1. Clone this repo:
     ```sh
-    git clone git@github.com:DourivalPimentel/easyProxyOnAWS.git
+    git clone git@github.com:DourivalPimentel/terraformingSageMakerNBinstance.git
     ```
 2. If you don't have AWS Cli or Terraform setup, follow the tutorials bellow:
     1. Install [Terraform](https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu) to spin up the EC2 from command line
@@ -14,7 +10,7 @@
     3. Install [AWS Cli](https://linuxhint.com/install_aws_cli_ubuntu/) to allow access to your AWS account.
 3. Go to the projects folder:
     ```
-    cd easyProxyOnAWS
+    cd terraformingSageMakerNBinstance
     ```
 4. Start Terraform:
     ```sh
